@@ -1,0 +1,578 @@
+
+.db-main-table table tbody tr, .db-main-table table tbody tr td, .db-main-table table tbody tr td a{
+    background-color: #eee;
+    color: 777;
+}
+
+.db-main-table table {
+    width: 80%;
+    border-collapse: inherit;
+    border: 1px #dddddd solid;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.db-main-table table tr {
+    background-color: #fff;
+    position: relative;
+}
+
+.db-main-table table tr.reversed {
+    background-color: #f4f4f4;
+}
+
+.db-main-table table tr.reversed td,.db-main-table table tr.reversed a {
+    color: #999999;
+}
+
+.db-main-table table tr.unread {
+    background-color: #fff;
+}
+
+.db-main-table table tr.unread td,.db-main-table table tr.unread a {
+    background-color: #fff;
+    color: #0e0e0f;
+}
+
+.db-main-table table tr.unread a:hover {
+    color: #00b22d;
+}
+
+.db-main-table table tr.deleted {
+    text-decoration: line-through;
+}
+
+.db-main-table table tr.empty-row {
+    text-align: center;
+}
+
+.db-main-table table tr.sel {
+    background-color: #feffdd;
+}
+
+.db-main-table table tr.hidden-action-link a {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.db-main-table table tr.hidden-action-link:hover a {
+    opacity: 1;
+}
+
+.db-main-table table tr.order-extra td {
+    border-top: 1px #eeeeee solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #999999;
+}
+
+.db-main-table table tr.order-extra td.no-top {
+    border-top: 0px;
+    padding-top: 8px;
+}
+
+.db-main-table table tr.order-extra td.db-title em {
+    min-width: 30px;
+    font-size: 12px;
+    display: inline-block;
+    font-style: normal;
+}
+
+.db-main-table table tr.order-extra td.db-title em strong {
+    font-size: 14px;
+    font-weight: 900;
+    vertical-align: bottom;
+    padding-right: 2px;
+}
+
+.db-main-table table tr.gig-translated td {
+    border-top: none;
+    padding: 5px 10px 4px 0;
+    border-top: 1px solid #eeeeee;
+    text-align: left;
+    line-height: 16px;
+}
+
+.db-main-table table tr.gig-translated td:first-child {
+    border: none;
+}
+
+.db-main-table table tr.gig-translated td:first-child label {
+    display: none;
+}
+
+.db-main-table table tr.gig-translated td.icon-th {
+    padding-right: 0;
+}
+
+.db-main-table table tr.gig-translated td.edit-dd {
+    width: 55px;
+    padding-left: 15px;
+}
+
+.db-main-table table tr.gig-translated td:last-of-type {
+    padding-right: 15px;
+}
+
+.db-main-table table tr.gig-translated td .add-translation {
+    line-height: 33px;
+    color: #00b22d;
+}
+
+.db-main-table table tr.gig-translated .gig-image-small {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.db-main-table table tr.gig-translated .gig-locale {
+    line-height: 16px;
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+    padding-left: 22px;
+    position: relative;
+    vertical-align: top;
+    float: left;
+    margin-right: 10px;
+}
+
+.db-main-table table tr.gig-translated .gig-locale:before {
+    content: "";
+    background: transparent url("//cdnil20.fiverrcdn.com/assets/v2_globals/icn-master-small-7de77d46a093dc31b0bec31c2c0f16a7.png") no-repeat 0 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    background-position: -100px -754px;
+    width: 18px;
+    height: 18px;
+    top: -1px;
+    left: 0px;
+}
+
+.db-main-table table tr.gig-translated .title div,.db-main-table table tr.gig-translated .title .rating {
+    display: none;
+}
+
+.db-main-table table tr.gig-translated .filter-select .dropdown-toggle {
+    margin: 2px 0;
+}
+
+.db-main-table table td {
+    padding: 12px 25px 12px 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-top: 1px #dddddd solid;
+}
+
+.db-main-table table td a,.db-main-table table td input[type="submit"] {
+    color: #00698c;
+}
+
+.db-main-table table td a:hover,.db-main-table table td input[type="submit"]:hover {
+    color: #00b22d;
+    text-decoration: none;
+}
+
+.db-main-table table td a.asc:after,.db-main-table table td a.desc:after,.db-main-table table td input[type="submit"].asc:after,.db-main-table table td input[type="submit"].desc:after {
+    margin-left: 5px;
+    font-size: 9px;
+    content: "\25B2";
+}
+
+.db-main-table table td a.desc:after,.db-main-table table td input[type="submit"].desc:after {
+    content: "\25BC";
+}
+
+.db-main-table table td.ellipsis-wrap {
+    white-space: normal;
+    max-width: 200px;
+}
+
+.db-main-table table td.ellipsis-wrap .ellipsis {
+    height: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.db-main-table table td.ellipsis-wrap .ellipsis .proposal-tag {
+    background-color: #44ab00;
+    color: #fff;
+    float: left;
+    padding: 0 5px;
+    line-height: 20px;
+    font-size: 13px;
+    margin-right: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.db-main-table table td.ellipsis-wrap .hint--top:before,.db-main-table table td.ellipsis-wrap .hint--top:after {
+    left: 10%;
+}
+
+.db-main-table table td.action-btn {
+    width: 120px;
+}
+
+.db-main-table table td.amount {
+    width: 65px;
+    padding-right: 15px;
+}
+
+.db-main-table table td.applications {
+    width: 30px;
+    padding-right: 15px;
+}
+
+.db-main-table table td.chkbox {
+    width: 15px;
+    padding-right: 10px;
+}
+
+.db-main-table table td.country {
+    width: 26px;
+    padding-right: 0px;
+}
+
+.db-main-table table td.date {
+    width: 90px;
+    padding-right: 15px;
+}
+
+.db-main-table table td.date-large {
+    width: 150px;
+    padding-right: 15px;
+}
+
+.db-main-table table td.db-thumb,.db-main-table table td.db-star-review {
+    width: 26px;
+    padding-right: 0;
+}
+
+.db-main-table table td.delete {
+    width: 20px;
+}
+
+.db-main-table table td.edit-dd {
+    width: 55px;
+    padding-left: 15px;
+}
+
+.db-main-table table td.icon-th {
+    width: 40px;
+}
+
+.db-main-table table td.gig-image-small {
+    width: 74px;
+    padding-right: 15px;
+}
+
+.db-main-table table td.gig-image-thumb {
+    width: 45px;
+    padding-right: 15px;
+}
+
+.db-main-table table td.offers {
+    width: 160px;
+    padding-right: 15px;
+}
+
+.db-main-table table td.user-image-thumb {
+    width: 32px;
+    padding-right: 15px;
+}
+
+.db-main-table table td.status {
+    width: 82px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 15px;
+}
+
+.db-main-table table td.status-star {
+    width: 21px;
+    padding-right: 15px;
+}
+
+.db-main-table table td:first-child {
+    padding-left: 15px !important;
+}
+
+.db-main-table table td:last-child {
+    padding-right: 15px;
+}
+
+.db-main-table table td.status .status-bar {
+    display: block;
+}
+
+.db-main-table table td.status-star .star {
+    margin: 0 0 1px 0;
+}
+
+.db-main-table table td.action-btn {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 7px;
+}
+
+.db-main-table table td.action-btn .btn-standard {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.db-main-table table td.chkbox .fake-check-grey {
+    padding-top: 3px;
+}
+
+.db-main-table table td.edit-dd a.portfolio {
+    background-color: #fff !important;
+    border-top: 1px solid #dddddd;
+    padding-top: 11px;
+    margin-top: 5px;
+}
+
+.db-main-table table td.edit-dd a.portfolio:hover {
+    color: #555555;
+    cursor: default;
+}
+
+.db-main-table table td.edit-dd a.portfolio.disabled:hover {
+    color: #555555 !important;
+}
+
+.db-main-table table td.edit-dd .fake-dropdown .dropdown-toggle {
+    padding: 12px;
+    margin-top: 5px;
+}
+
+.db-main-table table td.edit-dd .fake-dropdown .dropdown-toggle:after {
+    top: 9px;
+    right: 6px;
+}
+
+.db-main-table table td.edit-dd .fake-dropdown .dropdown-menu li>a,.db-main-table table td.edit-dd .fake-dropdown .dropdown-menu li input[type="submit"] {
+    color: #555555;
+}
+
+.db-main-table table td.edit-dd .fake-dropdown .dropdown-menu li>a:hover {
+    color: #00b22d;
+}
+
+.db-main-table table td.edit-dd .fake-dropdown .dropdown-menu li input[type="submit"]:hover {
+    color: #00b22d;
+}
+
+.db-main-table table td.edit-dd .fake-dropdown .fake-check-grey {
+    display: block;
+    white-space: nowrap;
+    text-transform: uppercase;
+    float: none;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.db-main-table table td.edit-dd .fake-dropdown .fake-check-grey .chk-img {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.db-main-table table td.edit-dd .fake-dropdown .fake-check-grey:hover {
+    color: #00b22d;
+}
+
+.db-main-table table td.gig-image-small .gig-pict-74 {
+    float: none;
+    display: block;
+    margin-right: 0;
+}
+
+.db-main-table table td.gig-image-small .gig-pict-45 {
+    float: none;
+    display: block;
+    margin-right: 0;
+}
+
+.db-main-table table td.gig-image-thumb .gig-pict-45 {
+    float: none;
+    display: block;
+    margin-right: 0;
+    margin-top: -1px;
+}
+
+.db-main-table table td.user-image-thumb .user-pict-32 {
+    float: none;
+    display: block;
+    margin-right: 0;
+    margin-top: -1px;
+}
+
+.db-main-table table td.w-img img {
+    margin-right: 10px;
+    max-width: 45px;
+    max-height: 35px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.db-main-table table td.amount .money-out {
+    color: #ff4d4d;
+}
+
+.db-main-table table td.amount .money-in {
+    color: #00b22d;
+}
+
+.db-main-table table td.db-thumb {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.db-main-table table td.db-thumb span {
+    background: transparent url("//cdnil20.fiverrcdn.com/assets/v2_globals/icn-master-small-7de77d46a093dc31b0bec31c2c0f16a7.png") no-repeat 0 0;
+    width: 26px;
+    height: 20px;
+    overflow: hidden;
+    text-indent: -3000px;
+    display: inline-block;
+}
+
+.db-main-table table td.db-thumb.btn-pos span {
+    background-position: 0 -650px;
+}
+
+.db-main-table table td.db-thumb.btn-neg span {
+    background-position: -50px -650px;
+}
+
+.db-main-table table td.db-star-review {
+    width: 50px;
+    padding-right: 10px;
+}
+
+.db-main-table table td.db-star-review span {
+    background: #f7f7f7;
+    border: 1px solid #dddddd;
+    display: block;
+    width: 50px;
+    padding-right: 5px;
+    position: relative;
+    text-align: right;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.db-main-table table td.db-star-review span:after {
+    background: transparent url("//cdnil21.fiverrcdn.com/assets/v2_globals/icn-master-stars-d46d14c64331c9c50cfd5f94707f8ba2.png") no-repeat -251px 0;
+    width: 14px;
+    height: 14px;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 3px;
+    top: 3px;
+}
+
+.db-main-table table td.db-title {
+    text-overflow: ellipsis;
+    max-width: 180px;
+    overflow: hidden;
+}
+
+.db-main-table table td.db-title-longer {
+    text-overflow: ellipsis;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.db-main-table table thead tr {
+    background-color: #999;
+}
+
+.db-main-table table thead td {
+    border: none;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.db-main-table table thead td a {
+    color: #fff;
+}
+
+.db-main-table table thead td a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.db-main-table table thead td a.asc:after,.db-main-table table thead td a.desc:after {
+    content: "\25B2";
+    position: absolute;
+    font-size: 9px;
+}
+
+.db-main-table table thead td a.desc:after {
+    content: "\25BC";
+}
+
+.db-main-table table tbody td.userpict {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 26px;
+    max-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.db-main-table table tbody td.userpict .user-verified {
+    margin-top: 5px;
+}
+
+.db-main-table table tbody td.status-star {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.db-main-table a {
+    text-decoration: none;
+    display: block;
+}
+
+.db-main-table a:hover {
+    color: red !important;
+}
+

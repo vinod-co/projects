@@ -1,0 +1,172 @@
+.uiv2-form {
+    margin-top: 20px;
+    font: 400 14px/14px 'lato',sans-serif;
+}
+
+.uiv2-form fieldset {
+    border: 1px solid #D6D6D6;
+    padding: 0 0 30px 0;
+    margin-bottom: 5px;
+}
+
+.uiv2-form .uiv2-row-border {
+    border-top: 1px solid #D6D6D6;
+    margin-top: 10px;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+.uiv2-form .uiv2-help-text {
+    font-size: 12px !important;
+    line-height: 18px;
+    display: block;
+}
+
+.uiv2-form .uiv2-input-prepend {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px 0 0 3px;
+    color: #58595B;
+    display: inline;
+    float: left;
+    font: 300 12px/25px 'Roboto Slab',serif;
+    height: 26px;
+    padding: 1px 5px 0;
+    margin-top: 8px;
+    margin-right: 0;
+}
+
+.uiv2-form span.uiv2-input-with-prepend input[type=text],
+    .uiv2-form span.uiv2-input-with-prepend input[type=password]
+    .uiv2-form span.uiv2-input-with-prepend input[type=email] {
+    border-radius: 0 4px 4px 0;
+    width: 169px;
+}
+
+.uiv2-form .uiv2-err-text {
+    color: #FF0000;
+}
+
+.uiv2-form .legend {
+    padding: 10px 0 10px 20px;
+    border-bottom: 1px solid #F1F1F1;
+    font: 300 18px/24px 'Lato', 'Roboto Slab',serif;
+    color: #58595B;
+    margin: 0;
+    background: #FFF;
+    background: -moz-linear-gradient(top, #f0f0f0 0%, #ffffff 60%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(60%, #ffffff), color-stop(100%, #ffffff));
+    background: -webkit-linear-gradient(top, #f0f0f0 0%, #ffffff 60%, #ffffff 100%);
+    background: -o-linear-gradient(top, #f0f0f0 0%, #ffffff 60%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #f0f0f0 0%, #ffffff 60%, #ffffff 100%);
+    background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 60%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCFCFC', endColorstr='#ffffff', GradientType=0);
+}
+
+.uiv2-form-row {
+    display: block;
+    clear: both;
+    margin: 5px 30px;
+    color: #58595B;
+}
+
+.uiv2-form-label {
+    float: left;
+    width: 19%;
+    margin: 12px 15px 3px 30px;
+    text-align: right;
+}
+
+.uiv2-form-row input[type=text], .uiv2-form-row input[type=email],
+    .uiv2-form-row textarea, .uiv2-form-row input[type=password] {
+    border-radius: 4px;
+    color: #6D6E71;
+    padding: 0 4px;
+}
+
+.uiv2-form-row textarea {
+    width: 350px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #E0E0E0;
+}
+
+.uiv2-form input[type=submit].uiv2-large-btn, .uiv2-form input[type=button].uiv2-large-btn {
+    height: 40px;
+    border: medium none;
+    width: 150px;
+    cursor: pointer;
+}
+
+.uiv2-form input[type=submit].uiv2-btn-default-small {
+    width: auto;
+    height: 30px;
+}
+
+.uiv2-form .uiv2-form-input select {
+    margin-top: 6px;
+    padding: 5px;
+}
+
+.uiv2-form-input {
+    float: left;
+}
+
+.uiv2-form-button-wrapper {
+    margin: 8px 5px;
+    clear: both;
+}
+
+.uiv2-field-required {
+    color: red;
+    font-size: 1.2em;
+}
+
+.uiv2-form .uiv2-field-required, .uiv2-form .uiv2-help-text {
+    margin-left: 2px;
+}
+
+.uiv2-form .uiv2-captcha-container {
+    margin-left: 0;
+}
+
+.uiv2-form .uiv2-captcha-container .uiv2-form-input, .uiv2-form .uiv2-captcha-container .uiv2-form-input span {
+    float: none;
+}
+
+.uiv2-form .uiv2-captcha-container .uiv2-form-row {
+    margin-left: 0;
+}
+
+.uiv2-form .uiv2-captcha-container .uiv2-form-label {
+    margin-left: 0;
+    text-align: left;
+    margin-top: 9px;
+    float: none;
+}
+
+.uiv2-form .uiv2-captcha-container .captcha {
+    margin-top: 14px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.uiv2-form .uiv2-terms {
+    font: 300 14px/20px 'Roboto Slab', serif;
+}
+
+.uiv2-form .uiv2-captcha-container .uiv2-form-input span {
+    position: relative;
+}
+
+.uiv2-form .uiv2-captcha-container .uiv2-form-input img {
+    border: 1px solid #dbdbdb !important;
+    padding: 8px;
+}
+
+.uiv2-form .uiv2-captcha-container .uiv2-form-input input[type=text] {
+    position: absolute;
+    margin-left: 20px;
+    top: -33px;
+}

@@ -1,0 +1,125 @@
+<?php include_once "header.php"; ?>
+
+
+		<div class="services">
+			<div>
+				<img src="images/pandits.png">
+				<h4><a href="./view_profiles.php?type=2">Pandits and Purohits</a></h4>
+			</div>
+			<div>
+				<img src="images/decoraters.png">
+				<h4><a href="./view_profiles.php?type=4">Flower decoraters</a></h4>
+			</div>
+			<div>
+				<img src="images/musicians.png">
+				<h4><a href="./view_profiles.php?type=5">Musicians</a></h4>
+			</div>
+		</div>
+
+		<div class="services">
+			<div>
+				<img src="images/caterers.png">
+				<h4><a href="./view_profiles.php?type=3">Food caterers</a></h4>
+			</div>
+			<div>
+				<img src="images/weddinghall.png">
+				<h4><a href="./view_profiles.php?type=6">Wedding halls</a></h4>
+			</div>
+			<div style="text-align: left; height: 270px">
+				<ul>
+					<li>Search for all kinds of service providers.</li>
+					<li>Communicate directly with the service providers</li>
+					<li>Get email/SMS notifications</li>
+				</ul>
+				<form action="view_profiles.php">
+					<input type="search" placeholder="Search.." id="search_token" name="search_token" />
+				</form>
+				<h3 style="text-align: center">And it's all FREE!!</h3>
+			</div>
+
+			<?php
+				// the following div should be replaced with the current user info, and
+				// a logout button, if the user has logged in or is a returning user who opted
+				// for "Keep me logged in".
+
+			if($user_loggedin){
+				?>
+			<div style="width: 475px; height: 270px; text-align: left;">
+				<form class="classic" method="POST" action="logout.php">
+					<fieldset>
+						<legend>
+						Hello <?php echo $current_user["firstname"] . " " 
+					. $current_user["lastname"];?>, Welcome back.</legend>
+
+					<p>
+						<label>Cellphone</label>
+						<label><?php echo $current_user["cellphone"]; ?></label>
+					<br />
+						<label>Landline</label>
+						<label><?php echo $current_user["landline"]; ?></label>
+					<br />
+						<label>Email</label>
+						<label><?php echo $current_user["email"]; ?></label>
+					<br />
+						<label>Resident of</label>
+						<label><?php echo $current_user["city"]; ?>, 
+							<?php echo $current_user["state"]; ?></label>
+					<br />
+					<br />
+					<a href="dashboard.php">Goto Dashboard</a>
+					<br />
+					<br />
+					</p>
+					
+					<button class="submit">Logout</button>
+					</fieldset>
+				</form>
+			</div>
+				<?php
+			}
+			else{
+				?>
+
+
+			<div style="width: 475px; height: 270px; text-align: left;">
+				<form class="classic" method="POST" action="login.php">
+					<fieldset>
+						<legend>Existing users</legend>
+						<p>
+							<label>Username / Email</label>
+							<input type="text" id="username_email" name="username_email" 
+								value="" />
+						</p>
+						<p>
+							<label>Password</label>
+							<input type="password" placehoder="Password" 
+								id="password" name="password" 
+								value="" />
+						</p>
+						<p>
+							<input type="checkbox" name="keep_me_logged_in" /> Keep me logged in
+						</p>
+						<p>
+							<button class="submit">Login</button>
+							<span class="error">
+							<?php
+							if(isset($_SESSION["login_error"])){
+								echo $_SESSION["login_error"];
+							}
+							?>
+							</span>
+						</p>
+					</fieldset>
+				</form>
+
+				<p style="text-align: center">
+					<a href="register.php">New users please register</a>
+				</p>
+			</div>
+
+				<?php
+			}
+			?>
+		</div>
+
+<?php include_once "footer.php"; ?>
